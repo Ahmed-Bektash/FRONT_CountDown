@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="Container-main">
+
+            <h1>This is a NY Countdown</h1>
+
+            <div class="Countdown-Container">
+                <div class="count-el days-c">
+                    <p class="Bold-text" id="Days-time">0</p>
+                    <span class="small-text" id="Days-text">Days</span>
+                </div>
+                
+                <div class="count-el Hours-c">
+                    <p class="Bold-text" id="Hours-time">0</p>
+                    <span class="small-text" id="Hours-text">Hours</span>
+                </div>
+                
+                <div class="count-el Minutes-c">
+                    <p class="Bold-text" id="Minutes-time">0</p>
+                    <span class="small-text" id="Minutes-text">Minutes</span>
+                
+                </div>
+                <div class="count-el Seconds-c">
+                    <p class="Bold-text" id="Seconds-time">0</p>
+                    <span class="small-text" id="Seconds-text">Seconds</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="Buttons-container">
+            <!-- <button id="start">Start</button> -->
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="Form-Container">
+            <Form name="CustomTime" id="TimeForm">
+                <!-- <label for="set-days">Choose a day:</label> -->
+                <input type="text" id="set-days" name="set-days" placeholder="Set days" required>
+                
+                <!-- <label for="set-hours">Choose an hour:</label> -->
+                <input type="text" id="set-hours" name="set-hours" placeholder="Set Hours" required>
+
+                <!-- <label for="set-mins">Choose Minutes:</label> -->
+                <input type="text" id="set-mins" name="set-mins" placeholder="Set minutes" required>
+
+                <!-- <label for="set-sec">Choose Seconds:</label> -->
+                <input type="text" id="set-sec" name="set-sec" placeholder="Set seconds" required>
+
+                <input type="submit" value="Start Timer" id="submit">
+
+            </Form>
+        </div>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>

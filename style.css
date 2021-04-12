@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,300&display=swap');
+
+
+* {
+     box-sizing: border-box; /*  best practice: sets all elements with width and height including the border and padding*/
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    /* background-color:rgba(159, 164, 186, 0.5); */
+    background-color: lightblue;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: 0rem;
+    
+}
+
+.Container-main{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: #EFF7FB;
+    box-shadow: 7px 7px 5px #888888;
+    max-width: 800px;
+    width:90%;
+   
+    
+    
+}
+
+.Countdown-Container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.small-text{
+    font-weight: normal;
+    margin: 1rem 2.5rem;
+}
+
+.Bold-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+    
+}
+
+.Buttons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    width:30%;
+    min-width: 300px;
+}
+
+button{
+    /* margin: 1rem 2rem; */
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: #96dafcb9;
+    box-shadow: 7px 7px 5px #888888; 
+    border-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+@keyframes changeSize {
+    from {
+      font-size: 1.5rem;
+      /* padding: 0.5rem 1rem; */
+      
+    }
+  
+    to {
+        font-size: 1.4rem;
+        /* padding: 0.6rem 1.1rem; */
+    }
+  }
+
+button:active{
+    outline: none;
+    /* transition: "font-size" 300ms ease 0;
+    font-size: 1.3rem; */
+    animation-duration: 100ms;
+    animation-timing-function: ease;
+    animation-name: changeSize;
+    /* animation-iteration-count: 1; */
+    /* animation-direction: alternate; */
+}
+
+  
+   
+    
+  
+
+.Form-Container{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+input[type=text],[type = submit]{
+    border-style: none;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 0.5rem;
+}
+input[type=submit]:focus{
+    transition: 300ms;
+    font-size: 1.2rem;
+}
+input[type=submit]:hover{
+    background-color: #83d0f7b0 ;
+}
+input[type=text]:focus{
+    background-color: #dddddd;
+    
+}
+
+
+input[type=submit]{
+
+    background-color: #96dafcbd;
+    box-shadow: 7px 7px 5px #888888; 
+    border-style: none;
+    font-weight: bold;
+
+}
+/* for phones */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .Countdown-Container {
+        flex-wrap: nowrap;
+        width:100%;
+    }
+    .Bold-text{
+        font-size: 3rem;
+    }
+    .small-text{
+        margin: 1rem 2rem;
+    }
+    Form{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-content: center; */
+    }
+    input[type=text],[type = submit]{
+        border-style: none;
+        font-size: 1rem;
+        border-radius: 5px;
+        outline: none;
+        margin: 0.5rem 0.5rem
+    }
+}
+/* for tablets */
+@media only screen and (max-width: 768px) { 
+    body {
+      background-color: lightblue;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .Countdown-Container {
+        flex-wrap: nowrap;
+    }
+    .Bold-text{
+        font-size: 3rem;
+    }
+    .small-text{
+        margin: 1rem 2rem;
+    }
+    Form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type=text],[type = submit]{
+        border-style: none;
+        font-size: 1rem;
+        border-radius: 5px;
+        outline: none;
+        margin: 0.5rem 0.5rem
+    }
+}
+
+@media only screen and (max-width: 1200px) { 
+    Form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type=text],[type = submit]{
+        border-style: none;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        outline: none;
+        margin: 0.5rem 0.5rem
+    }
+ }
+ 
